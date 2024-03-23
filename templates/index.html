@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Sentiment Analysis App </h1>
+    <form action="/senti" method="post">
+        <label>Enter the review </label><br>
+        <textarea rows="10" cols="50" name="review"></textarea><br>
+        <input type="submit" class="submit">
+    </form>
+    {% if sentiment %}
+        <p>{{ sentiment }}</p>
+    {% endif %}
+</body>
+</html>
